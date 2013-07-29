@@ -1,0 +1,42 @@
+html{
+  background-image:url('../sports_baseball_template_1.jpg');
+  border-image-repeat: none;
+}
+.container {
+  margin: 50px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+  background: white;
+  opacity: 0.5;
+}
+th {
+  text-align: left;
+}
+
+.nav {
+  position:fixed;
+  top:0px;
+  height: 30px;
+  width: 100%;
+
+}
+
+.nav ul {
+
+  list-style-type: none
+}
+
+.nav a {
+  text-decoration: none;
+
+}
+
+.ballot {
+  margin: 50px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+ background: white;
+ opacity: 1.0; 
+}

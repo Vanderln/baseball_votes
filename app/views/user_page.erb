@@ -1,0 +1,96 @@
+
+<div class="ballot">  
+<h1><%=current_user.name%>'s User Page</h1>
+
+<h4>Cast your ballot</h4>
+
+
+
+<form id="choosePlayers" action = "/user/<%=current_user.id%>" method="Post">
+
+
+<p><input type="submit" value="Cast your Ballot"></p>
+<p><input type="text" name="ballot[name]" placeholder="Name your ballot here!"></p>
+
+  <h5>First Base</h5>
+  <select name="ballot[first_base]">
+    <%@players1b.each do |player|%>
+  <option value="<%=player.player_name%>"> <%=player.player_name%></option>
+  <%end%>
+  </select>
+
+
+
+  <h5>Second Base</h5>
+  <select name="ballot[second_base]">
+  <%@players2b.each do |player|%>    
+  <option value="<%=player.player_name%>"> <%=player.player_name%></option>
+  <%end%>
+  </select>
+
+
+  <h5>Third Base</h5>
+  <select name="ballot[third_base]">
+  <%@players3b.each do |player|%>    
+  <option value="<%=player.player_name%>"> <%=player.player_name%></option>
+  <%end%>
+  </select>
+
+
+  <h5>Short Stop</h5>
+  <select name="ballot[short_stop]">
+  <%@playersss.each do |player|%>    
+  <option value="<%=player.player_name%>"> <%=player.player_name%></option>
+  </select>
+<%end%>
+
+  <h5>Right Field</h5>
+  <select name="ballot[right_field]">
+  <%@playersrf.each do |player|%>    
+  <option value="<%=player.player_name%>"> <%=player.player_name%></option>
+  <%end%>
+  </select>
+
+
+<h5>Left Field</h5>
+  <select name="ballot[left_field]">
+  <%@playerslf.each do |player|%>    
+  <option value="<%=player.player_name%>"> <%=player.player_name%></option>
+  <%end%>
+  </select>
+
+
+  <h5>Center Field</h5>
+  <select name="ballot[center_field]">
+  <%@playerscf.each do |player|%>    
+  <option value="<%=player.player_name%>"> <%=player.player_name%></option>
+  <%end%>
+  </select>
+
+
+  <h5>Starting Pitcher</h5>
+  <select name="ballot[starting_pitcher]">
+  <%@playerssp.each do |player|%>    
+  <option value="<%=player.player_name%>"> <%=player.player_name%></option>
+  <%end%>
+  </select>
+
+
+  <h5>Relief Pitcher</h5>
+  <select name="ballot[relief_pitcher]">
+  <%@playersrp.each do |player|%>    
+  <option value="<%=player.player_name%>"> <%=player.player_name%></option>
+  <%end%>
+  </select>
+
+
+  <h5>Catcher</h5>
+  <select name="ballot[catcher]">
+  <%@playersc.each do |player|%>    
+  <option value="<%=player.player_name%>"> <%=player.player_name%></option>
+  <%end%>
+  </select>
+
+</form>
+</div>
+
